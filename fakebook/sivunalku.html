@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title><?php echo "$title"; ?></title>
+<link href="fakebook-styles.css" rel="stylesheet" type="text/css" />
+<link rel="SHORTCUT ICON" href="favicon.ico" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<script type="text/javascript" src="jsConfirmStyle.js"></script>
+<script type="text/javascript">
+<!--
+
+
+
+function validateForm()
+{
+	var etunimi=document.forms["registration"]["etunimi"].value
+	var sukunimi=document.forms["registration"]["sukunimi"].value
+	var sposti=document.forms["registration"]["sposti"].value
+	var spostiuudelleen=document.forms["registration"]["sposti-uudelleen"].value
+	var salasana=document.forms["registration"]["salasana"].value
+	var salasanauudelleen=document.forms["registration"]["salasana-uudelleen"].value
+	var sukupuoli=document.forms["registration"]["sukupuoli"].value
+	var paiva=document.forms["registration"]["paiva"].value
+	var kuukausi=document.forms["registration"]["kuukausi"].value
+	var vuosi=document.forms["registration"]["vuosi"].value
+
+var etunimi = etunimi.replace(/^\s+|\s+$/g, '') ;
+var sukunimi = sukunimi.replace(/^\s+|\s+$/g, '') ;
+var sposti = sposti.replace(/^\s+|\s+$/g, '') ;
+var spostiuudelleen = spostiuudelleen.replace(/^\s+|\s+$/g, '') ;
+var salasana = salasana.replace(/^\s+|\s+$/g, '') ;
+var salasanauudelleen = salasanauudelleen.replace(/^\s+|\s+$/g, '') ;
+
+
+	if (etunimi=="")
+  {
+  alert("Kirjoita etunimesi!");
+ 
+  
+  return false;
+  }
+	else if (sukunimi=="")
+  {
+  alert("Kirjoita sukunimesi!");
+ 
+  
+  return false;
+   
+  }
+  
+  var e=document.forms["registration"]["sposti"].value
+var atpos=e.indexOf("@");
+var dotpos=e.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=e.length)
+  {
+  alert("Virheellinen e-mail osoite");
+  return false;
+  }
+
+    	else if (sposti!==spostiuudelleen)
+  {
+  alert("Kirjoita sama sähköpostiosoite kahdesti!");
+  
+  return false;
+  }
+  
+  
+    	else if (salasana=="")
+  {
+  alert("Kirjoita salasana!");
+  
+  return false;
+  }
+  
+  	else if (salasanauudelleen=="")
+  {
+  alert("Kirjoita sama salasana uudelleen!");
+  
+  return false;
+  }
+  
+    	else if (salasanauudelleen!==salasana)
+  {
+  alert("Kirjoita sama salasana kahdesti!");
+  
+  return false;
+  }
+  
+  
+
+  
+    	else if (sukupuoli=="")
+  {
+  alert("Valitse sukupuolesi!");
+  
+  return false;
+  }
+
+    	else if (paiva=="")
+  {
+  alert("Valitse syntymäpäiväsi!");
+  
+  return false;
+  }
+  
+      	else if (kuukausi=="")
+  {
+  alert("Valitse syntymäkuukautesi!");
+  
+  return false;
+  }
+
+
+      	else if (vuosi=="")
+  {
+  alert("Valitse syntymävuotesi!");
+  
+  return false;
+  }
+
+    
+  
+
+
+
+  
+}
+
+-->
+</script>
+    <script type="text/javascript" language="javascript"><!--
+function HideContent(d) {
+document.getElementById(d).style.display = "none";
+}
+function ShowContent(d) {
+document.getElementById(d).style.display = "block";
+}
+function ReverseDisplay(d) {
+if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+else { document.getElementById(d).style.display = "none"; }
+}
+//--></script>
+
+</head>
+<body>
+<div id="container">
+	<div id="headerwrap">
+    	<div id="header">
+        	<div id="headerotsikko">
+            	<h1><a href="index.php">fakebook</a></h1>
+            </div>
+            <div id="headerlogin">

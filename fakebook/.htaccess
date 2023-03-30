@@ -1,0 +1,7 @@
+SSLRequireSSL
+# yhy
+ErrorDocument 404 /fakebook/errorpage.php?reason=404
+
+ErrorDocument 500 /fakebook/errorpage.php?reason=500
+
+ErrorDocument 403 /fakebook/

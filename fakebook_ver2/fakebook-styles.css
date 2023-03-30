@@ -1,0 +1,515 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "ta homa";
+    src: url("tahoma.ttf");
+}
+
+@font-face {
+    font-family: "ta homa";
+    src: url("tahomabd.ttf");
+    font-weight: bold;
+}
+
+
+body {
+	margin: 0;
+	background-color: #fff;
+	font-family: tahoma, "ta homa", "Lucida Grande", Georgia, Arial, Helvetica;
+}
+
+#container {
+	width: 100%;
+	min-height: 690px;
+}
+
+#headerwrap {
+	background-color: #3b5998;
+	height: 85px;
+	width:100%;
+}
+
+#header {
+	margin: auto;
+	width: 950px;
+	height: 85px;
+	padding: 0;
+}
+
+#headerotsikko {
+	float: left;
+	width: 350px;
+	height: 57px;
+	padding: 28px 0 0 0;
+}
+
+#headerotsikko h1 {
+	color: #ffffff;
+	margin: 0;
+	font-size: 38px;
+	font-weight: bold;
+	
+/*	font-family:Verdana, Arial, Helvetica, sans-serif; */
+}
+
+#headerotsikko a {
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0;
+	font-size: 38px;
+
+	font-weight: bold;
+
+/* 	font-family:Verdana, Arial, Helvetica, sans-serif; */
+}
+
+#headerlogin {
+	float: right;
+	width: 600px;
+	height: 75px;
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: normal;
+	padding-top: 10px;
+	/* font-family: Geneva, Arial, Helvetica, sans-serif; */
+}
+
+#headerlogin form {
+	margin: 0;
+	float:right;
+	height: 75px;
+}
+
+#headerlogin a {
+	color: #98a9bb;
+	/*color: #9fafc3;*/
+	text-decoration: none;
+}
+
+#headerlogin a:hover {
+	color: #98a9bb;
+	color: #9fafc3;
+	text-decoration: underline;
+}
+
+.laheta-painike {
+	width: 110px;
+	height: 22px;
+	border: 1px solid #29447e;
+	   -moz-box-shadow:    inset 0 1px 32px #8a9cc2;
+   -webkit-box-shadow: inset 0 1px 2px #8a9cc2;
+   box-shadow:         inset 0 1px 2px #8a9cc2;
+	background-color: #5d76aa;
+	font-weight: bold;
+	color: #fff;
+}
+
+.input-login {
+	width: 150px;
+	height: 18px;
+	border: 1px solid #1e2a5b;
+}
+
+.form-login {
+	width: 180px;
+	height: 18px;
+	border: 1px solid #999;
+}
+
+.laheta-painike:hover {
+	border: 1px solid #29447e;
+background-color: #5e77aa;
+	color: #fff;
+	cursor: pointer;
+}
+
+.pidasisaankir {
+	color: #98a9bb;
+	cursor: pointer;
+}
+
+.cursori {
+	cursor: pointer;
+}
+
+
+#banneriwrappi {
+	width: 100%;
+	height: 500px;
+	background: url('images/bannerbg.jpg') repeat-x;
+}
+
+#banneri {
+	width: 930px;
+	height: 480px;
+	margin: auto;
+	padding: 10px;
+	background: url('images/mainoskuva.png') 0 90px no-repeat;
+}
+
+#rekisteroidy {
+	float: right;
+	width: 465px;
+	height: 480px;
+	font-size: 14px;
+	/* font-family: Geneva, Arial, Helvetica, sans-serif; */
+	color: #1e2a5b;
+	/*color: #3b5998;*/
+}
+
+#rekisteroidy h2 {
+	margin: 0;
+	margin-top: 15px;
+	color: #1e2a5b;
+	/*color: #3b5998;*/
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+#rekisteroidy a {
+	margin: 0;
+	color: #3b5998;
+	font-size: 11px;
+	text-decoration: none;
+}
+#rekisteroidy a:hover {
+	text-decoration: underline;
+}
+
+#rekisteroidy h3 {
+	margin: 10px 0 10px 0;
+	color: #1e2a5b;
+	/*color: #3b5998;*/
+	font-weight: normal;
+/*	border-bottom: 1px solid #3b5998; */
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+#rekisteroidy hr {
+	color: #6f8dcc;
+	margin-bottom: 10px;
+	background-color:#6f8dcc;
+	height:1px;
+	border:none;
+}
+
+#markkinointikuva {
+	float: left;
+	width: 400px;
+	padding-right: 65px;
+	height: 480px;
+	
+
+}
+
+#markkinointikuva h2 {
+	margin: 0;
+	margin-top: 15px;
+	color: #1e2a5b;
+	/*color: #3b5998;*/
+	font-size: 19px;
+	font-weight: bold;
+	/*letter-spacing: 1px; */
+}
+
+#markkinointikuva h3 {
+	margin: 10px 0 20px 0;
+	color: #1e2a5b;
+	letter-spacing: 1px;
+	/*color: #3b5998;*/
+}
+
+.reggaus-input {
+	width: 250px;
+	height: 26px;
+	font-size: 15px;
+	border: 1px solid #6f8dcc;
+	
+}
+
+#footerwrap {
+	min-height: 80px;
+	width: 100%;
+	clear: both;
+}
+
+#footer {
+	width: 930px;
+	min-height: 60px;
+	padding: 10px;
+	margin: auto;
+}
+
+#footer p {
+	color: #3b5998;
+	margin: 0;
+}
+
+.navbar-valkoinen {
+	color: #ffffff;
+	padding: 5px;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.searchsubmit {
+	width: 24px;
+	height: 24px;
+	border: none;
+	background: #ffffff url('images/searchicon.png') no-repeat;
+	-webkit-border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-top-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	cursor: pointer;
+}
+
+.input-search {
+	width: 200px;
+	height: 22px;
+	color: #555;
+	border: none;
+}
+
+#contentwrap {
+	width: 100%;
+	min-height: 500px;
+}
+
+#content {
+	width: 930px;
+	min-height: 480px;
+	margin: auto;
+	padding: 10px;
+	
+}
+
+#personal-data {
+	width: 930px;
+	height: 200px;
+}
+
+#personal-data h2 {
+margin: 0;
+}
+#personal-data h5 {
+margin: 0;
+font-weight: normal;
+}
+
+#personal-data-name {
+	float: left;
+	width: 350px;
+	text-align: left;
+	height: 200px;
+}
+
+#content h2 {
+	font-weight: normal;
+	font-size: 20px;
+}
+
+#navi {
+	float: right;
+	width: 580px;
+	text-align: right;
+	height: 200px;
+}
+
+.etsitulos h3 {
+	margin: 0;
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.etsitulos a {
+	margin: 0;
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.etsitulos a:hover {
+	margin: 0;
+	text-decoration: underline;
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.etsitulos {
+	width: 450px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: #8fa7db;
+	border: 2px solid #3b5998;
+}
+
+.seinadivi {
+	background-color: #eeeff4;
+	padding: 5px;
+	margin-bottom: 0;
+	
+}
+
+.seinadivi h4 {
+	color: #3b5998;
+	margin: 0;
+	font-weight: normal;
+}
+
+.seinadivi h5 {
+	color: #333;
+	margin: 0;
+	font-weight: normal;
+	
+}
+
+.seinadivi p {
+	color: #555;
+	margin: 0;
+	font-weight: normal;
+	
+}
+
+#content h4 {
+	color: #3b5998;
+	margin: 0;
+	font-weight: normal;
+}
+
+#content a {
+	color: #3b5998;
+	margin: 0;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#content h5 {
+	color: #333;
+	margin: 0;
+	font-weight: normal;
+	margin-bottom: 5px;
+	
+}
+
+#content p {
+	color: #555;
+	margin: 0;
+	font-weight: normal;
+	
+}
+
+.seina-input {
+	width: 350px;
+	height: 22px;
+	margin-left: 40px;
+}
+
+#content li, #content ul {
+	list-style-type: none;
+}
+
+.del h5 {
+	color: #FF0000;
+	float: right;
+	
+}
+
+.del a {
+	color: #FF0000;
+	float: right;
+}
+
+.alaspudotus-reggaus {
+	background: #fff;
+	border: 1px solid #ccc;
+	height: 28px;
+	font-size: 13px;
+}
+
+.profilenavbutton {
+width: 145px;
+ height: 30px;
+	border: 1px solid #000;
+	background-color: #5f7bb4;
+	font-weight: bold;
+	color: #fff;
+}
+
+.profilenavbutton:hover {
+	border: 1px solid #000;
+background-color: #5e77aa;
+	color: #fff;
+	cursor: pointer;
+}
+
+.lisaa-kommenttibutton {
+width: 165px;
+ height: 25px;
+	border: 1px solid #000;
+	background-color: #5f7bb4;
+	font-weight: bold;
+	color: #fff;
+	}
+	
+	.lisaa-kommenttibutton:hover {
+	border: 1px solid #000;
+background-color: #5e77aa;
+	color: #fff;
+	cursor: pointer;}
+	
+	
+	#jsconfirm {
+	border-color: #3b5998;
+	border-width: 2px 4px 4px 2px;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: -1000px;
+	z-index: 100;
+}
+
+#jsconfirm table {
+	background-color: #fff;
+	border: 2px groove #3b5998;
+	height: 150px;
+	width: 300px;
+}
+
+#jsconfirmtitle {
+	background-color: #3b5998;
+	color: #ffffff;
+	font-weight: bold;
+	height: 30px;
+	text-align: center;
+}
+
+#jsconfirmbuttons {
+	height: 50px;
+	text-align: center;
+}
+
+#jsconfirmbuttons input {
+	background-color: #E9E9CF;
+	color: #ffffff;
+	font-weight: bold;
+	width: 125px;
+	height: 33px;
+	border: none;
+}
+
+#jsconfirmleft{
+	background-image: url(left2.png);
+}
+
+#jsconfirmright{
+	background-image: url(right2.png);
+}
